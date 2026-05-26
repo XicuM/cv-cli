@@ -6,17 +6,12 @@ import subprocess
 from pathlib import Path
 from cv_cli.scons_helpers import get_resource_path, combine_yaml_files
 
-@click.group()
-def main():
-    """CV compilation CLI tool."""
-    pass
-
-@main.command()
+@click.command()
 @click.argument('content', type=click.Path(exists=True))
 @click.option('--output', '-o', required=True, type=click.Path(), help='Path to output PDF.')
 @click.option('--template', '-t', default='template-cv.tex', help='LaTeX template filename or path.')
 @click.option('--lang', '-l', default=None, help='Language code (e.g. en, es, ca). Inferred from filename if not specified.')
-def build(content, output, template, lang):
+def main(content, output, template, lang):
     """Builds a PDF from YAML content and localization files."""
     content_path = Path(content).absolute()
     output_path = Path(output).absolute()

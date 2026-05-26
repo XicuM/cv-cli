@@ -1,14 +1,14 @@
-build/
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# SCons
 .sconsign.dblite
-content/*
-!content/cv/
-content/cv/*
-!content/cv/template.yaml
-!content/letters/
-content/letters/*
-!content/letters/template.yaml
-!content/personal_info/
-content/personal_info/*
-!content/personal_info/template.yaml
-assets/*
-!assets/**/template*
+
+# Package build & distribution
+build/
+dist/
+*.egg-info/
+egg-info/
