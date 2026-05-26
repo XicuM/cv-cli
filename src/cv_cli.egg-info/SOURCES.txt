@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/cv_cli/__init__.py
+src/cv_cli/cli.py
+src/cv_cli/scons_helpers.py
+src/cv_cli.egg-info/PKG-INFO
+src/cv_cli.egg-info/SOURCES.txt
+src/cv_cli.egg-info/dependency_links.txt
+src/cv_cli.egg-info/entry_points.txt
+src/cv_cli.egg-info/requires.txt
+src/cv_cli.egg-info/top_level.txt
+src/cv_cli/i18n/ca.yaml
+src/cv_cli/i18n/en.yaml
+src/cv_cli/i18n/es.yaml
+src/cv_cli/templates/template-cv.tex
+src/cv_cli/templates/template-letter.tex
